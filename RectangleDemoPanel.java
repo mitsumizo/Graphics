@@ -1,9 +1,9 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class LineDemoPanel extends MyPanel 
+public class RectangleDemoPanel extends MyPanel 
 {
-	public LineDemoPanel()
+	public RectangleDemoPanel()
 	{
 		super();
 	}
@@ -12,7 +12,7 @@ public class LineDemoPanel extends MyPanel
 	{
 		super.paintComponent(g);
 			
-		g.setColor(Color.red);
+		g.setColor(Color.gray);
 		
 		int startX = 10;
 		int startY = 10;
@@ -22,6 +22,13 @@ public class LineDemoPanel extends MyPanel
 		
 		g.drawLine(startX, startY, endX, endY);
 		
+		startX += 30;
+		startY += 30;
+		
+		endX += 40;
+		endY += 40;
+		
+		g.fillRect(startX, startY, endX, endY);
 	}
 
 }

@@ -19,8 +19,7 @@ public class RectangleDemoPanel extends MyPanel
 		
 		int endX = 280;
 		int endY = 280;
-		
-		g.drawLine(startX, startY, endX, endY);
+		g.drawRect(startX, startY, endX, endY);
 		
 		startX += 30;
 		startY += 30;
